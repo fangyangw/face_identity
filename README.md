@@ -31,7 +31,7 @@ url = url.format(randCode, int(time.time() * 1000))
 ## 在线测试效果
 ![prediction_result](prediction_result.jpg)
 
-##脚本说明
+## 脚本说明
 * train_image.py  # 训练图形模型
 * train_text.py  # 训练文字模型
 * test_text.py  # 序列文字模型预测效果
