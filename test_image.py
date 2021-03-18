@@ -14,8 +14,8 @@ import time
 
 plt.rcParams['font.sans-serif'] = ['SimHei']
 
-model_save_path = os.path.join("models", "image_model")
-text_model_save_path = os.path.join("models", "text_model2")
+model_save_path = os.path.join("models", "image_model1")
+text_model_save_path = os.path.join("models", "text_model3")
 
 model = tf.keras.models.load_model(model_save_path)
 text_model = tf.keras.models.load_model(text_model_save_path)

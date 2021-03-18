@@ -199,7 +199,7 @@ def train_model(train_ds, test_ds, num_classes):
     plt.legend(loc='upper right')
     plt.title('Training and Validation Loss')
     plt.show()
-    model.save(os.path.join("models", "text_model2"))
+    model.save(os.path.join("models", "text_model3"))
     # model.fit()
 
 
@@ -256,9 +256,9 @@ if __name__ == '__main__':
     test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(10000).batch(1)
     for t, k in test_ds:
         print(t.shape, k.shape)
-    # train_model(train_ds, test_ds, len(all_label))
+    train_model(train_ds, test_ds, len(all_label))
     # train_my_model(train_ds, test_ds)
-    generate_random_image(test_ds)
+    # generate_random_image(test_ds)
 
 
 

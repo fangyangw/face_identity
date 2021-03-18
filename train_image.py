@@ -172,7 +172,7 @@ def train_model(train_ds, test_ds, num_classes):
                   loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                   metrics=['accuracy'])
     # model.summary()
-    epochs = 10
+    epochs = 50
     history = model.fit(
         train_ds,
         validation_data=test_ds,
@@ -199,7 +199,7 @@ def train_model(train_ds, test_ds, num_classes):
     plt.legend(loc='upper right')
     plt.title('Training and Validation Loss')
     plt.show()
-    model.save(os.path.join("models", "image_model"))
+    model.save(os.path.join("models", "image_model1"))
     # model.fit()
 
 
